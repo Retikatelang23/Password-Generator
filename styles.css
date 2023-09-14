@@ -1,0 +1,189 @@
+*,
+*::before,
+*::after {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'League Spartan', sans-serif;
+}
+
+body {
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background: linear-gradient(138deg, rgba(96, 29, 140, 1) 0%, rgba(137, 50, 167, 1) 0%, rgba(78, 15, 100, 1) 50%, rgba(69, 8, 106, 1) 100%);
+}
+
+.container {
+    width: 90%;
+    max-width: 450px;
+
+}
+
+h1 {
+    color: whitesmoke;
+    opacity: 0.75;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    text-align: center;
+    line-height: 1; 
+    font-size: 25px;
+}
+
+.display-container {
+    position: relative;
+    background-color: #240033;
+    border-radius: 0.5rem;
+    border-bottom: 0.98 solid e099ff;
+    margin: 1rem 0;
+    padding-top: 0.20rem;
+    height: 90px;
+} 
+
+.display {
+    width: 100%;
+    background-color: transparent;
+    outline: none;
+    border: none;
+    padding: 1.15rem 1rem;
+    color: white;
+    font-weight: 600;
+    line-height: 30px;
+    letter-spacing: 1px;
+    padding-right: 3.25rem;
+    border: none;
+}
+.copyBtn{
+    background-color: linear-gradient(138deg, rgba(96, 29, 140, 1) 0%, rgba(137, 50, 167, 1) 0%, rgba(78, 15, 100, 1) 50%, rgba(69, 8, 106, 1) 100%);;
+    position: absolute;
+}
+
+.display::placeholder {
+    position: absolute;
+    top: 50%;
+    left: 1.5rem;
+    font-size: 1.5rem;
+    line-height: 30px;
+    color: whitesmoke;
+    opacity: 0.78;
+    text-transform: uppercase;
+}
+
+.input-container {
+    width:100;
+    background-color: #240033;
+    border-radius: 0.5rem;
+    padding: 2rem;
+    border-bottom: 0.98 solid e099ff;
+}
+
+.length-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.length-container p:nth-child(1) {
+    color: whitesmoke;
+    font-size: 1.5rem;
+    opacity: 0.75;
+}
+
+.length-container p:nth-child(2) {
+    color: whitesmoke;
+    opacity: 0.75;
+    font-size: 1.5rem;
+}
+
+.generateButton {
+    width: 100%;
+    padding: 1rem 0;
+    background-color: #e7b3ff;
+    opacity: 0.75;
+    text-align: center;
+    border-radius: 0.75rem;
+    border-bottom: 0.35 solid rgb(79, 110, 75);
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    color: black;
+    font-weight: 600;
+    font-size: 1.23rem;
+}
+
+.check {
+    display: flex;
+    align-items: center;
+    margin: 1rem 0;
+    gap: 0 1rem;
+}
+
+.check-input {
+    appearance: none;
+    width: 20px;
+    height: 20px;
+    border: 1px solid rgb(79, 110, 75);
+    cursor: pointer;
+    position: relative;
+    border-radius: 0.35rem;
+}
+
+.check input:checked {
+    background-color: black;
+}
+
+.check input:checked::before{
+    content: "#";
+    position: absolute;
+    color: aqua;
+    font-size: 1.05rem;
+    font-weight: 600;
+    left: 50%;
+    top: -3.5px;
+    transform: translateX(-50%);
+    transform: translateY(-10%);
+}
+
+.check label{
+    color: whitesmoke;
+    font-size: 1.25rem;
+    opacity: 0.75;
+    letter-spacing: 0.75px;
+}
+
+.slider{
+    appearance: none;
+    width: 100%;
+    height: 0.75rem;
+    cursor: pointer;
+    background-color: #d780ff;
+    border-radius: 1rem;
+    margin-top: 2rem;
+    margin-bottom: 1.5rem;
+    background-image: black;
+    background-repeat: no-repeat;
+    border: none;
+    outline: none;
+}
+
+.slider::-webkit-slider-thumb{
+    position: relative;
+    z-index: 1;
+    appearance: none;
+    height: 2rem;
+    width: 2rem;
+    border-radius: 50%;
+    background-color: #34004d;
+    cursor: pointer;
+    margin-top: -3px;
+    box-shadow: 0px 0px 20px 0px rgb(219, 225, 211);
+    transition: all 100ms ease-in;
+}
+
+.slider::-webkit-slider-thumb:hover{
+    outline: 2px solid #d499ff;
+    background-color: #d24dff;
+    box-shadow: 0px 0px 25px 5px rgb(219, 225, 211);
+}
