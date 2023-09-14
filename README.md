@@ -26,3 +26,6 @@ JavaScript is used to handle user interactions and generate random passwords bas
 Password strength is ensured by utilizing a secure random number generator.
 The application provides instant feedback to the user based on the selected options.
 Cross-browser compatibility is maintained for a wide range of modern web browsers.
+
+# Demo
+You can try out the live demo of the Password Generator https://my-password-generator2.netlify.app/
